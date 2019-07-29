@@ -13,7 +13,7 @@
         <meta name="description" content="akari's blog">
       
       
-        <link rel="canonical" href="https://akari-oi.github.io/math/la/matrix-inversion/">
+        <link rel="canonical" href="https://akari-oi.github.io/geometry/misc/">
       
       
         <meta name="author" content="akari">
@@ -37,18 +37,18 @@
       
         <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
       
-      <link rel="shortcut icon" href="../../../favicon.ico">
+      <link rel="shortcut icon" href="../../favicon.ico">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
     
     
       
-        <title>矩阵求逆 - Hello,I am akari</title>
+        <title>杂项 - Hello,I am akari</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.0284f74d.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.01803549.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.01803549.css">
       
       
         
@@ -57,7 +57,7 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
@@ -66,12 +66,12 @@
         <style>body,input{font-family:"Fira Sans","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Fira Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
-      <link rel="manifest" href="../../../manifest.webmanifest">
+      <link rel="manifest" href="../../manifest.webmanifest">
     
     
-      <link rel="stylesheet" href="../../../_static/css/extra.css?v=12">
+      <link rel="stylesheet" href="../../_static/css/extra.css?v=12">
     
     
       
@@ -95,7 +95,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#_1" tabindex="1" class="md-skip">
+      <a href="#pick" tabindex="1" class="md-skip">
         跳转至
       </a>
     
@@ -121,7 +121,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                矩阵求逆
+                杂项
               
             </span>
           
@@ -200,7 +200,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../.." title="akari-oi" class="md-tabs__link">
+        <a href="../.." title="akari-oi" class="md-tabs__link">
           akari-oi
         </a>
       
@@ -213,7 +213,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../search/" title="搜索" class="md-tabs__link">
+        <a href="../../search/" title="搜索" class="md-tabs__link">
           搜索
         </a>
       
@@ -226,7 +226,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../string/" title="字符串" class="md-tabs__link">
+        <a href="../../string/" title="字符串" class="md-tabs__link">
           字符串
         </a>
       
@@ -239,7 +239,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../data-structure/" title="数据结构" class="md-tabs__link">
+        <a href="../../data-structure/" title="数据结构" class="md-tabs__link">
           数据结构
         </a>
       
@@ -252,7 +252,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../dp/" title="动态规划" class="md-tabs__link">
+        <a href="../../dp/" title="动态规划" class="md-tabs__link">
           动态规划
         </a>
       
@@ -265,7 +265,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../" title="数学" class="md-tabs__link md-tabs__link--active">
+        <a href="../../math/" title="数学" class="md-tabs__link">
           数学
         </a>
       
@@ -278,7 +278,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../graph/" title="图论" class="md-tabs__link">
+        <a href="../../graph/" title="图论" class="md-tabs__link">
           图论
         </a>
       
@@ -291,7 +291,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../geometry/" title="计算几何" class="md-tabs__link">
+        <a href="../" title="计算几何" class="md-tabs__link md-tabs__link--active">
           计算几何
         </a>
       
@@ -308,7 +308,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../other/offline/" title="其他算法" class="md-tabs__link">
+        <a href="../../other/offline/" title="其他算法" class="md-tabs__link">
           其他算法
         </a>
       
@@ -386,7 +386,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../.." title="简介" class="md-nav__link">
+    <a href="../.." title="简介" class="md-nav__link">
       简介
     </a>
   </li>
@@ -398,7 +398,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../control/" title="仪表盘" class="md-nav__link">
+    <a href="../../control/" title="仪表盘" class="md-nav__link">
       仪表盘
     </a>
   </li>
@@ -434,7 +434,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../search/" title="简介" class="md-nav__link">
+    <a href="../../search/" title="简介" class="md-nav__link">
       简介
     </a>
   </li>
@@ -470,7 +470,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../string/" title="简介" class="md-nav__link">
+    <a href="../../string/" title="简介" class="md-nav__link">
       简介
     </a>
   </li>
@@ -482,7 +482,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../string/pam/" title="回文自动机" class="md-nav__link">
+    <a href="../../string/pam/" title="回文自动机" class="md-nav__link">
       回文自动机
     </a>
   </li>
@@ -518,7 +518,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../data-structure/" title="简介" class="md-nav__link">
+    <a href="../../data-structure/" title="简介" class="md-nav__link">
       简介
     </a>
   </li>
@@ -530,7 +530,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../data-structure/binary-indexed-tree/" title="树状数组" class="md-nav__link">
+    <a href="../../data-structure/binary-indexed-tree/" title="树状数组" class="md-nav__link">
       树状数组
     </a>
   </li>
@@ -542,7 +542,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../data-structure/segment-tree/" title="线段树" class="md-nav__link">
+    <a href="../../data-structure/segment-tree/" title="线段树" class="md-nav__link">
       线段树
     </a>
   </li>
@@ -554,7 +554,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../data-structure/sparse-table/" title="ST表" class="md-nav__link">
+    <a href="../../data-structure/sparse-table/" title="ST表" class="md-nav__link">
       ST表
     </a>
   </li>
@@ -585,7 +585,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../data-structure/balanced-binary-tree/fhq-treap/" title="FHQ Treap" class="md-nav__link">
+    <a href="../../data-structure/balanced-binary-tree/fhq-treap/" title="FHQ Treap" class="md-nav__link">
       FHQ Treap
     </a>
   </li>
@@ -602,7 +602,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../data-structure/leftist-tree/" title="左偏树" class="md-nav__link">
+    <a href="../../data-structure/leftist-tree/" title="左偏树" class="md-nav__link">
       左偏树
     </a>
   </li>
@@ -638,7 +638,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../dp/" title="简介" class="md-nav__link">
+    <a href="../../dp/" title="简介" class="md-nav__link">
       简介
     </a>
   </li>
@@ -653,12 +653,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
     <label class="md-nav__link" for="nav-6">
       数学
@@ -676,7 +674,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../" title="简介" class="md-nav__link">
+    <a href="../../math/" title="简介" class="md-nav__link">
       简介
     </a>
   </li>
@@ -707,7 +705,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../div/" title="基础" class="md-nav__link">
+    <a href="../../math/div/" title="基础" class="md-nav__link">
       基础
     </a>
   </li>
@@ -719,7 +717,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../div/gcd/" title="gcd与exgcd" class="md-nav__link">
+    <a href="../../math/div/gcd/" title="gcd与exgcd" class="md-nav__link">
       gcd与exgcd
     </a>
   </li>
@@ -755,7 +753,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cm/cantor/" title="康托展开" class="md-nav__link">
+    <a href="../../math/cm/cantor/" title="康托展开" class="md-nav__link">
       康托展开
     </a>
   </li>
@@ -770,12 +768,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4" type="checkbox" id="nav-6-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4" type="checkbox" id="nav-6-4">
     
     <label class="md-nav__link" for="nav-6-4">
       线性代数
@@ -793,7 +789,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../gauss/" title="高斯消元" class="md-nav__link">
+    <a href="../../math/la/gauss/" title="高斯消元" class="md-nav__link">
       高斯消元
     </a>
   </li>
@@ -803,55 +799,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        矩阵求逆
-      </label>
-    
-    <a href="./" title="矩阵求逆" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../math/la/matrix-inversion/" title="矩阵求逆" class="md-nav__link">
       矩阵求逆
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">目录</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" title="代码" class="md-nav__link">
-    代码
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-        <li class="md-nav__item">
-          <a href="#__comments" title="评论" class="md-nav__link md-nav__link--active">
-            评论
-          </a>
-        </li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -861,7 +813,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../matrix-tree/" title="矩阵树定理" class="md-nav__link">
+    <a href="../../math/la/matrix-tree/" title="矩阵树定理" class="md-nav__link">
       矩阵树定理
     </a>
   </li>
@@ -878,7 +830,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../mobius/" title="莫比乌斯反演" class="md-nav__link">
+    <a href="../../math/mobius/" title="莫比乌斯反演" class="md-nav__link">
       莫比乌斯反演
     </a>
   </li>
@@ -890,7 +842,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../pythagorean-triple/" title="勾股数组" class="md-nav__link">
+    <a href="../../math/pythagorean-triple/" title="勾股数组" class="md-nav__link">
       勾股数组
     </a>
   </li>
@@ -926,7 +878,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../graph/" title="简介" class="md-nav__link">
+    <a href="../../graph/" title="简介" class="md-nav__link">
       简介
     </a>
   </li>
@@ -941,10 +893,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" checked>
     
     <label class="md-nav__link" for="nav-8">
       计算几何
@@ -962,7 +916,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../geometry/" title="简介" class="md-nav__link">
+    <a href="../" title="简介" class="md-nav__link">
       简介
     </a>
   </li>
@@ -974,7 +928,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../geometry/vector/" title="向量" class="md-nav__link">
+    <a href="../vector/" title="向量" class="md-nav__link">
       向量
     </a>
   </li>
@@ -986,7 +940,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../geometry/distance/" title="距离" class="md-nav__link">
+    <a href="../distance/" title="距离" class="md-nav__link">
       距离
     </a>
   </li>
@@ -998,7 +952,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../geometry/triangulation/" title="三角剖分" class="md-nav__link">
+    <a href="../triangulation/" title="三角剖分" class="md-nav__link">
       三角剖分
     </a>
   </li>
@@ -1010,7 +964,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../geometry/2d-convex-hull/" title="二维凸包" class="md-nav__link">
+    <a href="../2d-convex-hull/" title="二维凸包" class="md-nav__link">
       二维凸包
     </a>
   </li>
@@ -1022,7 +976,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../geometry/3d-convex-hull/" title="三维凸包" class="md-nav__link">
+    <a href="../3d-convex-hull/" title="三维凸包" class="md-nav__link">
       三维凸包
     </a>
   </li>
@@ -1034,7 +988,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../geometry/rotating-calipers/" title="旋转卡壳" class="md-nav__link">
+    <a href="../rotating-calipers/" title="旋转卡壳" class="md-nav__link">
       旋转卡壳
     </a>
   </li>
@@ -1046,7 +1000,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../geometry/half-plane-intersection/" title="半平面交" class="md-nav__link">
+    <a href="../half-plane-intersection/" title="半平面交" class="md-nav__link">
       半平面交
     </a>
   </li>
@@ -1058,7 +1012,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../geometry/scanning/" title="扫描线" class="md-nav__link">
+    <a href="../scanning/" title="扫描线" class="md-nav__link">
       扫描线
     </a>
   </li>
@@ -1070,7 +1024,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../geometry/random-incremental/" title="随机增量" class="md-nav__link">
+    <a href="../random-incremental/" title="随机增量" class="md-nav__link">
       随机增量
     </a>
   </li>
@@ -1101,7 +1055,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../geometry/circle/" title="简介" class="md-nav__link">
+    <a href="../circle/" title="简介" class="md-nav__link">
       简介
     </a>
   </li>
@@ -1113,7 +1067,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../geometry/circle/inversion/" title="圆的反演" class="md-nav__link">
+    <a href="../circle/inversion/" title="圆的反演" class="md-nav__link">
       圆的反演
     </a>
   </li>
@@ -1125,7 +1079,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../geometry/circle/discretization/" title="圆的离散化" class="md-nav__link">
+    <a href="../circle/discretization/" title="圆的离散化" class="md-nav__link">
       圆的离散化
     </a>
   </li>
@@ -1140,11 +1094,118 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../../geometry/misc/" title="杂项" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        杂项
+      </label>
+    
+    <a href="./" title="杂项" class="md-nav__link md-nav__link--active">
       杂项
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pick" title="Pick定理" class="md-nav__link">
+    Pick定理
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" title="简介" class="md-nav__link">
+    简介
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="证明" class="md-nav__link">
+    证明
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="例题" class="md-nav__link">
+    例题
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#poj2954-triangle" title="POJ2954 Triangle" class="md-nav__link">
+    POJ2954 Triangle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poj1265-area" title="POJ1265 Area" class="md-nav__link">
+    POJ1265 Area
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="欧拉定理" class="md-nav__link">
+    欧拉定理
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="证明" class="md-nav__link">
+    证明
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="评论" class="md-nav__link md-nav__link--active">
+            评论
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1197,7 +1258,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../other/offline/" title="简介" class="md-nav__link">
+    <a href="../../other/offline/" title="简介" class="md-nav__link">
       简介
     </a>
   </li>
@@ -1209,7 +1270,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../other/offline/cdq-divide/" title="CDQ分治" class="md-nav__link">
+    <a href="../../other/offline/cdq-divide/" title="CDQ分治" class="md-nav__link">
       CDQ分治
     </a>
   </li>
@@ -1221,7 +1282,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../other/offline/parallel-binsearch/" title="整体二分" class="md-nav__link">
+    <a href="../../other/offline/parallel-binsearch/" title="整体二分" class="md-nav__link">
       整体二分
     </a>
   </li>
@@ -1233,7 +1294,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../other/offline/mo-algo/" title="莫队算法" class="md-nav__link">
+    <a href="../../other/offline/mo-algo/" title="莫队算法" class="md-nav__link">
       莫队算法
     </a>
   </li>
@@ -1250,7 +1311,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../other/largest-matrix/" title="悬线法" class="md-nav__link">
+    <a href="../../other/largest-matrix/" title="悬线法" class="md-nav__link">
       悬线法
     </a>
   </li>
@@ -1275,16 +1336,81 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">目录</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" title="代码" class="md-nav__link">
-    代码
+  <a href="#pick" title="Pick定理" class="md-nav__link">
+    Pick定理
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" title="简介" class="md-nav__link">
+    简介
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="证明" class="md-nav__link">
+    证明
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="例题" class="md-nav__link">
+    例题
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#poj2954-triangle" title="POJ2954 Triangle" class="md-nav__link">
+    POJ2954 Triangle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poj1265-area" title="POJ1265 Area" class="md-nav__link">
+    POJ1265 Area
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="欧拉定理" class="md-nav__link">
+    欧拉定理
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="证明" class="md-nav__link">
+    证明
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1310,53 +1436,80 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/akari-oi/akari-oi/blob/master/docs/math/la/matrix-inversion.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/akari-oi/akari-oi/blob/master/docs/geometry/misc.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="_1">矩阵求逆<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>给出矩阵<span><span class="MathJax_Preview">A</span><script type="math/tex">A</script></span>,构造出矩阵<span><span class="MathJax_Preview">B</span><script type="math/tex">B</script></span>使<span><span class="MathJax_Preview">A \times B = E</span><script type="math/tex">A \times B = E</script></span>,$E表示单位矩阵。</p>
-<p>对于式子<span><span class="MathJax_Preview">A \times B = C</span><script type="math/tex">A \times B = C</script></span>
-根据矩阵乘法的定义，我们可以得到以下结论。</p>
-<p>交换<span><span class="MathJax_Preview">A</span><script type="math/tex">A</script></span>的<span><span class="MathJax_Preview">x</span><script type="math/tex">x</script></span>,<span><span class="MathJax_Preview">y</span><script type="math/tex">y</script></span>行，交换<span><span class="MathJax_Preview">C</span><script type="math/tex">C</script></span>的<span><span class="MathJax_Preview">x</span><script type="math/tex">x</script></span>,<span><span class="MathJax_Preview">y</span><script type="math/tex">y</script></span>行，等式仍然成立。</p>
+                  <h1>杂项</h1>
+                
+                <h2 id="pick">Pick定理<a class="headerlink" href="#pick" title="Permanent link">&para;</a></h2>
+<h3 id="_1">简介<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>对于一个所有点都是格点（即横、纵坐标均为正数）的简单多边形（简单多边形可以理解为边不相交的多边形，当然，不包括顶点），设<span><span class="MathJax_Preview">i=</span><script type="math/tex">i=</script></span>内部格点数(注意：不包括边上！)，<span><span class="MathJax_Preview">b=</span><script type="math/tex">b=</script></span>边上格点数，<span><span class="MathJax_Preview">S=</span><script type="math/tex">S=</script></span>多边形面积。<br />
+那么满足</p>
 <div>
 <div class="MathJax_Preview">
-\sum_{j=1}^n A_{x,j} \times B_{j,k}=C_{x,k}
+S=i+\frac b2 - 1
 </div>
 <script type="math/tex; mode=display">
-\sum_{j=1}^n A_{x,j} \times B_{j,k}=C_{x,k}
+S=i+\frac b2 - 1
 </script>
 </div>
-<div>
-<div class="MathJax_Preview">
-\sum_{j=1}^n A_{y,j} \times B_{j,k}=C_{y,k}
-</div>
-<script type="math/tex; mode=display">
-\sum_{j=1}^n A_{y,j} \times B_{j,k}=C_{y,k}
-</script>
-</div>
-<p>现在交换<span><span class="MathJax_Preview">x</span><script type="math/tex">x</script></span>,<span><span class="MathJax_Preview">y</span><script type="math/tex">y</script></span>行，可以得到</p>
-<div>
-<div class="MathJax_Preview">
-\sum_{j=1}^n A'_{x,j} \times B_{j,k}=C'_{x,k}=C_{y,k}
-</div>
-<script type="math/tex; mode=display">
-\sum_{j=1}^n A'_{x,j} \times B_{j,k}=C'_{x,k}=C_{y,k}
-</script>
-</div>
-<div>
-<div class="MathJax_Preview">
-\sum_{j=1}^n A'_{y,j} \times B_{j,k}=C'_{y,k}=C_{x,k}
-</div>
-<script type="math/tex; mode=display">
-\sum_{j=1}^n A'_{y,j} \times B_{j,k}=C'_{y,k}=C_{x,k}
-</script>
-</div>
-<p>很明显成立。</p>
-<p>同理，某一行乘上同一个数、某一行减去另一行乘上<span><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span>(<span><span class="MathJax_Preview">k\in R</span><script type="math/tex">k\in R</script></span>)仍然能保持等式成立。</p>
-<p>这些操作已足够用来搞高斯消元。</p>
-<p>于是直接把<span><span class="MathJax_Preview">A</span><script type="math/tex">A</script></span>消成单位矩阵，把等式变成<span><span class="MathJax_Preview">E\times B=A'</span><script type="math/tex">E\times B=A'</script></span>，也就是<span><span class="MathJax_Preview">B=A'</span><script type="math/tex">B=A'</script></span>就OK了。</p>
-<p>似乎还有一种更优秀的做法，但是我不会。</p>
-<h2 id="_2">代码<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>对于非简单的多边形 <span><span class="MathJax_Preview">{\displaystyle P}</span><script type="math/tex">{\displaystyle P}</script></span> ，皮克定理 <span><span class="MathJax_Preview">{\displaystyle A=i+{\frac {b}{2}}-\chi (P)}</span><script type="math/tex">{\displaystyle A=i+{\frac {b}{2}}-\chi (P)}</script></span> ，其中 <span><span class="MathJax_Preview">{\displaystyle \chi (P)}</span><script type="math/tex">{\displaystyle \chi (P)}</script></span> 表示 <span><span class="MathJax_Preview">{\displaystyle P}</span><script type="math/tex">{\displaystyle P}</script></span> 的<strong>欧拉特征数</strong>（不知道是啥）。<br />
+高维推广：Ehrhart 多项式 （不知道是啥）</p>
+<h3 id="_2">证明<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>证明懒得证（可能以后会回来填坑，但是别抱太大希望）。<br />
+有一种<a href="http://blog.sina.com.cn/s/blog_a1c409e30101efme.html">神奇的解释</a>感觉十分优秀。<br />
+<a href="https://en.wikipedia.org/wiki/Pick%27s_theorem">维基上的证明</a>  </p>
+<h3 id="_3">例题<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h4 id="poj2954-triangle"><a href="http://poj.org/problem?id=2954">POJ2954 Triangle</a><a class="headerlink" href="#poj2954-triangle" title="Permanent link">&para;</a></h4>
+<p>题意：给出三角形的顶点坐标（格点），求出三角形内部格点数。<br />
+模板题。话不多说，上代码。  </p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">#include</span><span class="cpf">&lt;cstdio&gt;</span><span class="cp"></span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="n">ax</span><span class="p">,</span> <span class="n">ay</span><span class="p">,</span> <span class="n">bx</span><span class="p">,</span> <span class="n">by</span><span class="p">,</span> <span class="n">cx</span><span class="p">,</span> <span class="n">cy</span><span class="p">;</span>
+
+<span class="kr">inline</span> <span class="kt">int</span> <span class="nf">Abs</span><span class="p">(</span> <span class="kt">int</span> <span class="n">x</span> <span class="p">){</span> <span class="k">return</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">?</span> <span class="o">-</span><span class="nl">x</span> <span class="p">:</span> <span class="n">x</span><span class="p">;</span> <span class="p">}</span>
+<span class="kr">inline</span> <span class="kt">int</span> <span class="nf">gcd</span><span class="p">(</span> <span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span> <span class="p">){</span>
+    <span class="k">while</span><span class="p">(</span> <span class="n">y</span> <span class="p">)</span> <span class="n">x</span> <span class="o">%=</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="o">^=</span><span class="n">y</span><span class="o">^=</span><span class="n">x</span><span class="o">^=</span><span class="n">y</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">x</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">signed</span> <span class="nf">main</span><span class="p">(){</span>
+    <span class="k">while</span><span class="p">(</span> <span class="o">~</span><span class="n">scanf</span><span class="p">(</span> <span class="s">&quot;%d%d%d%d%d%d&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">ax</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">ay</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">bx</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">by</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cx</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cy</span> <span class="p">)</span> <span class="p">){</span>
+        <span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="n">ax</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">ay</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">bx</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">by</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">cx</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">cy</span> <span class="p">)</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="n">bx</span> <span class="o">-=</span> <span class="n">ax</span><span class="p">,</span> <span class="n">by</span> <span class="o">-=</span> <span class="n">ay</span><span class="p">,</span> <span class="n">cx</span> <span class="o">-=</span> <span class="n">ax</span><span class="p">,</span> <span class="n">cy</span> <span class="o">-=</span> <span class="n">ay</span><span class="p">,</span>
+        <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="p">(</span> <span class="n">Abs</span><span class="p">(</span><span class="n">bx</span> <span class="o">*</span> <span class="n">cy</span> <span class="o">-</span> <span class="n">by</span> <span class="o">*</span> <span class="n">cx</span><span class="p">)</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">-</span> <span class="p">(</span> <span class="n">gcd</span><span class="p">(</span> <span class="n">Abs</span><span class="p">(</span><span class="n">bx</span><span class="p">),</span> <span class="n">Abs</span><span class="p">(</span><span class="n">by</span><span class="p">)</span> <span class="p">)</span> <span class="o">+</span> <span class="n">gcd</span><span class="p">(</span> <span class="n">Abs</span><span class="p">(</span><span class="n">cx</span><span class="p">),</span> <span class="n">Abs</span><span class="p">(</span><span class="n">cy</span><span class="p">)</span> <span class="p">)</span> <span class="o">+</span> <span class="n">gcd</span><span class="p">(</span> <span class="n">Abs</span><span class="p">(</span><span class="n">bx</span> <span class="o">-</span> <span class="n">cx</span><span class="p">),</span> <span class="n">Abs</span><span class="p">(</span><span class="n">by</span> <span class="o">-</span> <span class="n">cy</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span> <span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+<h4 id="poj1265-area"><a href="http://poj.org/problem?id=1265">POJ1265 Area</a><a class="headerlink" href="#poj1265-area" title="Permanent link">&para;</a></h4>
+<p>题意：有一个机器人初始点为<span><span class="MathJax_Preview">(0,0)</span><script type="math/tex">(0,0)</script></span>，给出它每次行走增加的横坐标与纵坐标，保证最终回到起点<span><span class="MathJax_Preview">(0,0)</span><script type="math/tex">(0,0)</script></span>，求出走过路径构成多边形的内部格点数、边上格点数、面积。  </p>
+<p>就是模板题啊。<br />
+比较难求的是多边形内部格点数，面积比较好求。<br />
+有一个有意思的结论：任意一个多边形的面积等于按顺序求相邻两个点与原点组成的向量的叉积之和（这个也可以通过顺时针定积分求得）。（然而我并不知道为什么(*/ω＼*)
+边上的格点数可以通过<span><span class="MathJax_Preview">gcd</span><script type="math/tex">gcd</script></span>求出。<br />
+最终使用<em>Pick定理</em>求出内部格点数就OK了。  </p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -1392,34 +1545,11 @@
 33
 34
 35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp"></span>
-<span class="cp">#define u32 unsigned</span>
-<span class="cp">#define i64 long long</span>
-<span class="cp">#define u64 unsigned long long</span>
-<span class="cp">#define f80 long double</span>
+36</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">#include</span><span class="cpf">&lt;cstdio&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
 <span class="cp">#define rgt register</span>
 <span class="cp">#define getchar() ( p1 == p2 &amp;&amp; ( p2 = bf + fread( bf, 1, 1 &lt;&lt; 21, stdin ), p1 = bf ) == p2 ? EOF : *p1++ )</span>
 <span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="cp">#define i64 long long</span>
-<span class="cp">#define mod 1000000007</span>
-<span class="cp">#pragma GCC optimize(3)</span>
 
 <span class="kt">char</span> <span class="n">bf</span><span class="p">[</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">21</span><span class="p">],</span> <span class="o">*</span><span class="n">p1</span><span class="p">,</span> <span class="o">*</span><span class="n">p2</span><span class="p">;</span>
 <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
@@ -1428,42 +1558,56 @@
     <span class="k">for</span> <span class="p">(</span> <span class="p">;</span> <span class="n">isdigit</span><span class="p">(</span><span class="n">t</span><span class="p">);</span> <span class="n">t</span> <span class="o">=</span> <span class="n">getchar</span><span class="p">()</span> <span class="p">)</span> <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="p">(</span> <span class="n">t</span> <span class="o">&amp;</span> <span class="mi">15</span> <span class="p">);</span> <span class="n">x</span> <span class="o">=</span> <span class="n">flg</span> <span class="o">?</span> <span class="o">-</span><span class="nl">x</span> <span class="p">:</span> <span class="n">x</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="kt">clock_t</span> <span class="n">__t_bg</span><span class="p">,</span> <span class="n">__t_ed</span><span class="p">;</span>
 
-<span class="kt">int</span> <span class="n">N</span><span class="p">;</span>
-<span class="kr">inline</span> <span class="kt">void</span> <span class="nf">swp</span><span class="p">(</span> <span class="kt">int</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="o">&amp;</span><span class="n">y</span> <span class="p">){</span> <span class="n">x</span><span class="o">^=</span><span class="n">y</span><span class="o">^=</span><span class="n">x</span><span class="o">^=</span><span class="n">y</span><span class="p">;</span> <span class="p">}</span>
-<span class="kr">inline</span> <span class="kt">int</span> <span class="nf">md</span><span class="p">(</span> <span class="n">rgt</span> <span class="n">i64</span> <span class="n">x</span> <span class="p">){</span> <span class="k">return</span> <span class="n">x</span> <span class="o">-=</span> <span class="n">x</span> <span class="o">/</span> <span class="n">mod</span> <span class="o">*</span> <span class="n">mod</span><span class="p">,</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">?</span> <span class="n">x</span> <span class="o">+</span> <span class="nl">mod</span> <span class="p">:</span> <span class="n">x</span><span class="p">;</span> <span class="p">}</span>
-<span class="k">struct</span> <span class="n">Matrix</span><span class="p">{</span>
-    <span class="kt">int</span> <span class="n">a</span><span class="p">[</span><span class="mi">405</span><span class="p">][</span><span class="mi">405</span><span class="p">];</span>
-    <span class="kr">inline</span> <span class="kt">void</span> <span class="nf">SWAP</span><span class="p">(</span> <span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span> <span class="p">){</span> <span class="k">static</span> <span class="kt">int</span> <span class="n">i</span><span class="p">;</span> <span class="k">for</span> <span class="p">(</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">N</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span> <span class="p">)</span> <span class="n">swp</span><span class="p">(</span> <span class="n">a</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">i</span><span class="p">],</span> <span class="n">a</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="p">);</span> <span class="p">}</span>
-    <span class="kr">inline</span> <span class="kt">void</span> <span class="nf">MUL</span><span class="p">(</span> <span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">t</span> <span class="p">){</span> <span class="k">static</span> <span class="kt">int</span> <span class="n">i</span><span class="p">;</span> <span class="k">for</span> <span class="p">(</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">N</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span> <span class="p">)</span> <span class="n">a</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">md</span><span class="p">(</span> <span class="p">(</span><span class="n">i64</span><span class="p">)</span><span class="n">a</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">t</span> <span class="p">);</span> <span class="p">}</span>
-    <span class="kr">inline</span> <span class="kt">void</span> <span class="nf">MD</span><span class="p">(</span> <span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">,</span> <span class="kt">int</span> <span class="n">t</span> <span class="p">){</span> <span class="k">static</span> <span class="kt">int</span> <span class="n">i</span><span class="p">;</span> <span class="k">for</span> <span class="p">(</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">N</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span> <span class="p">)</span> <span class="n">a</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">md</span><span class="p">(</span> <span class="n">a</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="n">i64</span><span class="p">)</span><span class="n">a</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">t</span> <span class="p">);</span> <span class="p">}</span>
-    <span class="kr">inline</span> <span class="kt">void</span> <span class="nf">print</span><span class="p">(){</span> <span class="k">static</span> <span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">;</span> <span class="k">for</span> <span class="p">(</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">N</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span> <span class="p">)</span> <span class="k">for</span> <span class="p">(</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">N</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span> <span class="p">)</span> <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;%d%c&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">],</span> <span class="s">&quot; </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">[</span><span class="n">j</span> <span class="o">==</span> <span class="n">N</span><span class="p">]</span> <span class="p">);</span> <span class="p">}</span>
-<span class="p">}</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">;</span>
-
-<span class="kr">inline</span> <span class="kt">int</span> <span class="nf">inv</span><span class="p">(</span> <span class="n">rgt</span> <span class="kt">int</span> <span class="n">x</span> <span class="p">){</span> <span class="k">static</span> <span class="kt">int</span> <span class="n">ans</span><span class="p">,</span> <span class="n">y</span><span class="p">;</span> <span class="k">for</span> <span class="p">(</span> <span class="n">ans</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">mod</span> <span class="o">-</span> <span class="mi">2</span><span class="p">;</span> <span class="n">y</span><span class="p">;</span> <span class="n">y</span> <span class="o">&gt;&gt;=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="n">i64</span><span class="p">)</span><span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="o">%</span> <span class="n">mod</span> <span class="p">)</span> <span class="k">if</span> <span class="p">(</span> <span class="n">y</span> <span class="o">&amp;</span> <span class="mi">1</span> <span class="p">)</span> <span class="n">ans</span> <span class="o">=</span> <span class="p">(</span><span class="n">i64</span><span class="p">)</span><span class="n">ans</span> <span class="o">*</span> <span class="n">x</span> <span class="o">%</span> <span class="n">mod</span><span class="p">;</span> <span class="k">return</span> <span class="n">ans</span><span class="p">;</span> <span class="p">}</span>
+<span class="kt">int</span> <span class="n">T</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="n">lx</span><span class="p">,</span> <span class="n">ly</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">dx</span><span class="p">,</span> <span class="n">dy</span><span class="p">,</span> <span class="n">ans1</span><span class="p">,</span> <span class="n">ans2</span><span class="p">;</span>
+<span class="c1">// ans1表示面积 * 2</span>
+<span class="c1">// ans2表示边上的格点数</span>
+<span class="c1">// 内部格点数 = ( ans1 - ans2 + 2 ) / 2</span>
+<span class="kr">inline</span> <span class="kt">int</span> <span class="nf">gcd</span><span class="p">(</span> <span class="n">rgt</span> <span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="n">rgt</span> <span class="kt">int</span> <span class="n">y</span> <span class="p">){</span>
+    <span class="k">while</span><span class="p">(</span> <span class="n">y</span> <span class="p">)</span> <span class="n">x</span> <span class="o">%=</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="o">^=</span><span class="n">y</span><span class="o">^=</span><span class="n">x</span><span class="o">^=</span><span class="n">y</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">x</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kr">inline</span> <span class="kt">int</span> <span class="nf">Abs</span><span class="p">(</span> <span class="n">rgt</span> <span class="kt">int</span> <span class="n">x</span> <span class="p">){</span> <span class="k">return</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">?</span> <span class="o">-</span><span class="nl">x</span> <span class="p">:</span> <span class="n">x</span><span class="p">;</span> <span class="p">}</span>
 
 <span class="kt">signed</span> <span class="nf">main</span><span class="p">(){</span>
-    <span class="n">__t_bg</span> <span class="o">=</span> <span class="n">clock</span><span class="p">();</span>
-    <span class="n">read</span><span class="p">(</span><span class="n">N</span><span class="p">);</span>
-    <span class="k">for</span> <span class="p">(</span> <span class="n">rgt</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">N</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span> <span class="p">)</span>
-        <span class="k">for</span> <span class="p">(</span> <span class="n">rgt</span> <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">N</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span> <span class="p">)</span>
-            <span class="n">read</span><span class="p">(</span><span class="n">A</span><span class="p">.</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]);</span>
-    <span class="k">for</span> <span class="p">(</span> <span class="n">rgt</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">N</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span> <span class="p">)</span> <span class="n">B</span><span class="p">.</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span> <span class="n">rgt</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">t</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">N</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span> <span class="p">){</span>
-        <span class="k">for</span> <span class="p">(</span> <span class="n">rgt</span> <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">N</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span> <span class="p">)</span> <span class="k">if</span> <span class="p">(</span> <span class="n">A</span><span class="p">.</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="p">){</span>
-            <span class="k">if</span> <span class="p">(</span> <span class="n">i</span> <span class="o">!=</span> <span class="n">j</span> <span class="p">)</span> <span class="n">A</span><span class="p">.</span><span class="n">SWAP</span><span class="p">(</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="p">),</span> <span class="n">B</span><span class="p">.</span><span class="n">SWAP</span><span class="p">(</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="p">);</span>
-            <span class="k">break</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="n">A</span><span class="p">.</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="p">)</span> <span class="k">return</span> <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;No Solution</span><span class="se">\n</span><span class="s">&quot;</span> <span class="p">),</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="n">t</span> <span class="o">=</span> <span class="n">inv</span><span class="p">(</span><span class="n">A</span><span class="p">.</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">i</span><span class="p">]),</span> <span class="n">A</span><span class="p">.</span><span class="n">MUL</span><span class="p">(</span> <span class="n">i</span><span class="p">,</span> <span class="n">t</span> <span class="p">),</span> <span class="n">B</span><span class="p">.</span><span class="n">MUL</span><span class="p">(</span> <span class="n">i</span><span class="p">,</span> <span class="n">t</span> <span class="p">);</span>
-        <span class="k">for</span> <span class="p">(</span> <span class="n">rgt</span> <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">N</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span> <span class="p">)</span> <span class="k">if</span> <span class="p">(</span> <span class="n">i</span> <span class="o">!=</span> <span class="n">j</span> <span class="p">)</span>
-            <span class="n">B</span><span class="p">.</span><span class="n">MD</span><span class="p">(</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="o">-</span><span class="n">A</span><span class="p">.</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="p">),</span> <span class="n">A</span><span class="p">.</span><span class="n">MD</span><span class="p">(</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="o">-</span><span class="n">A</span><span class="p">.</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="p">);</span>
-    <span class="p">}</span> <span class="n">B</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>
-    <span class="n">__t_ed</span> <span class="o">=</span> <span class="n">clock</span><span class="p">(),</span> <span class="n">fprintf</span><span class="p">(</span> <span class="n">stderr</span><span class="p">,</span> <span class="s">&quot;time: %.5lfs</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="kt">double</span><span class="p">(</span> <span class="n">__t_ed</span> <span class="o">-</span> <span class="n">__t_bg</span> <span class="p">)</span> <span class="o">/</span> <span class="n">CLOCKS_PER_SEC</span> <span class="p">);</span>
+    <span class="n">read</span><span class="p">(</span><span class="n">T</span><span class="p">);</span>
+    <span class="k">for</span> <span class="p">(</span> <span class="kt">int</span> <span class="n">Ti</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">Ti</span> <span class="o">&lt;=</span> <span class="n">T</span><span class="p">;</span> <span class="o">++</span><span class="n">Ti</span> <span class="p">){</span>
+        <span class="n">read</span><span class="p">(</span><span class="n">N</span><span class="p">),</span> <span class="n">lx</span> <span class="o">=</span> <span class="n">ly</span> <span class="o">=</span> <span class="n">ans1</span> <span class="o">=</span> <span class="n">ans2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">for</span> <span class="p">(</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">N</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span> <span class="p">)</span>
+            <span class="n">read</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">read</span><span class="p">(</span><span class="n">y</span><span class="p">),</span> <span class="n">ans2</span> <span class="o">+=</span> <span class="n">gcd</span><span class="p">(</span> <span class="n">Abs</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">Abs</span><span class="p">(</span><span class="n">y</span><span class="p">)</span> <span class="p">),</span>
+            <span class="n">x</span> <span class="o">+=</span> <span class="n">lx</span><span class="p">,</span> <span class="n">y</span> <span class="o">+=</span> <span class="n">ly</span><span class="p">,</span> <span class="n">ans1</span> <span class="o">+=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">ly</span> <span class="o">-</span> <span class="n">y</span> <span class="o">*</span> <span class="n">lx</span><span class="p">,</span> <span class="n">lx</span> <span class="o">=</span> <span class="n">x</span><span class="p">,</span> <span class="n">ly</span> <span class="o">=</span> <span class="n">y</span><span class="p">;</span>
+        <span class="n">ans1</span> <span class="o">=</span> <span class="n">Abs</span><span class="p">(</span><span class="n">ans1</span><span class="p">),</span>
+        <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;Scenario #%d:</span><span class="se">\n</span><span class="s">%d %d %.1lf</span><span class="se">\n\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">Ti</span><span class="p">,</span> <span class="p">(</span> <span class="n">ans1</span> <span class="o">-</span> <span class="n">ans2</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span><span class="p">,</span> <span class="n">ans2</span><span class="p">,</span> <span class="n">ans1</span> <span class="o">*</span> <span class="mf">0.5</span> <span class="p">);</span>
+    <span class="p">}</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </td></tr></table>
+
+<hr />
+<h2 id="_4">欧拉定理<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>对于任意简单多面体，设<span><span class="MathJax_Preview">V=</span><script type="math/tex">V=</script></span>顶点个数，<span><span class="MathJax_Preview">F=</span><script type="math/tex">F=</script></span>面数，<span><span class="MathJax_Preview">E=</span><script type="math/tex">E=</script></span>边数。<br />
+那么满足  </p>
+<div>
+<div class="MathJax_Preview">
+V+F-E=2
+</div>
+<script type="math/tex; mode=display">
+V+F-E=2
+</script>
+</div>
+<p>据说它与Pick定理等价(但是不知道为啥)<br />
+它适用于<strong>所有多边形</strong>啥维度都行*  </p>
+<h3 id="_5">证明<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>如果该多面体有一个面不为三角形，就将其分割为多个三角形；每分一个，顶点个数不变，边增加一条，点增加一条，<span><span class="MathJax_Preview">V+F-E=2</span><script type="math/tex">V+F-E=2</script></span>保持不变。<br />
+如果该多面体每个面都是三角形，先取出一个三角形，很明显，边、顶点都不变，面减少一个，此时<span><span class="MathJax_Preview">V+F-E=1</span><script type="math/tex">V+F-E=1</script></span>。<br />
+选取一个<strong>至少有一条边不与其他三角形共用的</strong>三角形，将它取出，这样有两种情况，一种是有两条边与其他三角形共用，另外一种是有一条边与其他三角形共用。<br />
+前一种情况，面、边减少一个，满足<span><span class="MathJax_Preview">V+F-E=1</span><script type="math/tex">V+F-E=1</script></span>不变。<br />
+后一种情况，面、顶点减少一个，边减少两个，满足<span><span class="MathJax_Preview">V+F-E=1</span><script type="math/tex">V+F-E=1</script></span>不变。<br />
+最后只剩下一个三角形，满足<span><span class="MathJax_Preview">V+F-E=3+1-3=1</span><script type="math/tex">V+F-E=3+1-3=1</script></span>。<br />
+QED.</p>
+<hr />
+<p><img alt="施工中..." src="../../undone.jpg" /></p>
                 
                   
                 
@@ -1476,9 +1620,9 @@
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://akari-oi.github.io/math/la/matrix-inversion/";
+      this.page.url = "https://akari-oi.github.io/geometry/misc/";
       this.page.identifier =
-        "/math/la/matrix-inversion/";
+        "/geometry/misc/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -1500,7 +1644,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../gauss/" title="高斯消元" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../circle/discretization/" title="圆的离散化" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1509,19 +1653,19 @@
                 <span class="md-footer-nav__direction">
                   上一页
                 </span>
-                高斯消元
+                圆的离散化
               </span>
             </div>
           </a>
         
         
-          <a href="../matrix-tree/" title="矩阵树定理" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../other/offline/" title="简介" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   下一页
                 </span>
-                矩阵树定理
+                简介
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -1553,12 +1697,12 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/application.245445c6.js"></script>
+      <script src="../../assets/javascripts/application.245445c6.js"></script>
       
         
         
           
-          <script src="../../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
           
             
               
@@ -1568,9 +1712,9 @@
           
         
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
-        <script src="../../../_static/js/extra.js?v=12"></script>
+        <script src="../../_static/js/extra.js?v=12"></script>
       
         <script src="https://cdnjs.loli.net/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
