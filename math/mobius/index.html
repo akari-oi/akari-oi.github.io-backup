@@ -1053,27 +1053,33 @@ d=1 * 1 \\
 \epsilon(n)=\sum_{i=0}^t (-1)^i \times C_t^i
 </script>
 </div>
-<p><del>根据二项式定理,如果n为1,值为1,否则为0</del><br />
-说实话我从二项式定理看不出这点。(大概是我太菜了吧)
-我们可以从排列组合方面考虑。
-我们设<span><span class="MathJax_Preview">f(i,j)=(-1)^j \times C_i^j</span><script type="math/tex">f(i,j)=(-1)^j \times C_i^j</script></span>
-则<span><span class="MathJax_Preview">f(i,j) = f(i - 1,j) - f(i - 1, j - 1)</span><script type="math/tex">f(i,j) = f(i - 1,j) - f(i - 1, j - 1)</script></span></p>
+<p><del>根据二项式定理,如果n为1,值为1,否则为0</del>  </p>
+<p>首先,n=1的时候很明显结果为1<br />
+因为  </p>
 <div>
 <div class="MathJax_Preview">
-\sum_{i=0}^t f(t,i) = f(t - 1, 0) + ( \sum_{i=1}^{t-1}(f(t-1,i)-f(t-1,i-1))) - f(t - 1,t - 1)
+(x+y)^n=\sum_{i=0}^n x^iy^{n-i}C_{n}^i
 </div>
 <script type="math/tex; mode=display">
-\sum_{i=0}^t f(t,i) = f(t - 1, 0) + ( \sum_{i=1}^{t-1}(f(t-1,i)-f(t-1,i-1))) - f(t - 1,t - 1)
+(x+y)^n=\sum_{i=0}^n x^iy^{n-i}C_{n}^i
 </script>
 </div>
-<p>很明显这是可以两两消去的。(当然,t = 0时除外)</p>
+<p>所以  </p>
+<div>
+<div class="MathJax_Preview">
+(1 + (-1))^n=\sum_{i=0}^n 1^i\times(-1)^{n-i}\times C_{n}^i=\sum_{i=0}^n (-1)^{n-i}\times C_{n}^i
+</div>
+<script type="math/tex; mode=display">
+(1 + (-1))^n=\sum_{i=0}^n 1^i\times(-1)^{n-i}\times C_{n}^i=\sum_{i=0}^n (-1)^{n-i}\times C_{n}^i
+</script>
+</div>
 <p>可以得出</p>
 <div>
 <div class="MathJax_Preview">
-\epsilon(n)=\sum_{i=0}^t (-1)^i \times C_t^i = [n = 1]
+\epsilon(n) = [n = 1]
 </div>
 <script type="math/tex; mode=display">
-\epsilon(n)=\sum_{i=0}^t (-1)^i \times C_t^i = [n = 1]
+\epsilon(n) = [n = 1]
 </script>
 </div>
 <p>接下来的证明请先学习莫比乌斯反演。</p>
