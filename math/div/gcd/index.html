@@ -892,7 +892,7 @@
 但是你会发现,更相减损术的复杂度不太对,一个<span><span class="MathJax_Preview">gcd( 1, 1e9 )</span><script type="math/tex">gcd( 1, 1e9 )</script></span>就能卡得TLE。<br />
 感兴趣的同学可以去学习Stein算法。  </p>
 <h2 id="_3">扩展欧几里得算法<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>根据贝祖定理，$\forall a,b \in \mathbb{N^+}, \exists x, y,ax+by=\gcd(a,b) $
+<p>根据贝祖定理，<span><span class="MathJax_Preview">\forall a,b \in \mathbb{N^+}, \exists x, y,ax+by=\gcd(a,b)</span><script type="math/tex">\forall a,b \in \mathbb{N^+}, \exists x, y,ax+by=\gcd(a,b)</script></span>
 扩展欧几里得算法就是用来求其中的<span><span class="MathJax_Preview">x</span><script type="math/tex">x</script></span>和<span><span class="MathJax_Preview">y</span><script type="math/tex">y</script></span>的。</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kt">void</span> <span class="nf">exgcd</span><span class="p">(</span> <span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">,</span> <span class="kt">int</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="o">&amp;</span><span class="n">y</span><span class="p">,</span> <span class="kt">int</span> <span class="o">&amp;</span><span class="n">z</span> <span class="p">);</span>
 </pre></div>
