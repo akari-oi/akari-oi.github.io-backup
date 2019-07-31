@@ -95,6 +95,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#_1" tabindex="1" class="md-skip">
+        跳转至
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -640,6 +644,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      DP优化
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        DP优化
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dp/optimizations/knuth-yao-quadrangle-inequality/" title="四边形不等式" class="md-nav__link">
+      四边形不等式
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -918,9 +958,69 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        简介
+      </label>
+    
     <a href="./" title="简介" class="md-nav__link md-nav__link--active">
       简介
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="基本元素" class="md-nav__link">
+    基本元素
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="向量" class="md-nav__link">
+    向量
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="线" class="md-nav__link">
+    线
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="点与线" class="md-nav__link">
+    点与线
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="评论" class="md-nav__link md-nav__link--active">
+            评论
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -1225,6 +1325,68 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="基本元素" class="md-nav__link">
+    基本元素
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="向量" class="md-nav__link">
+    向量
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="线" class="md-nav__link">
+    线
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="点与线" class="md-nav__link">
+    点与线
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="评论" class="md-nav__link md-nav__link--active">
+            评论
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -1235,7 +1397,116 @@
                 
                   <h1>简介</h1>
                 
-                <p><img alt="施工中..." src="../undone.jpg" /></p>
+                <p>计算几何并不等于解析几何.<br />
+计算几何常常会用到浮点数,为了保证精度,一般选用<code>double</code>或<code>long double</code>,但是精度仍然有限,需要尽量避免复杂的函数和运算.<br />
+根据题目需求,我们常常设定一个精度<code>eps</code>,<code>eps</code>一般是一个极小的数,<code>eps</code>过大会导致精度不够,<code>eps</code>过小会导致时间复杂度过高.<br />
+有时为了避免出现0,也可以加上<code>eps</code>.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">#define eps 1e-10</span>
+</pre></div>
+</td></tr></table>
+
+<p>实数比较,或者说判断正负号.因为精度原因,0可能会变成0.000000000000000012这样子,所以最好定义一个函数来判断.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">inline</span> <span class="kt">int</span> <span class="nf">sgn</span><span class="p">(</span> <span class="kt">double</span> <span class="n">x</span> <span class="p">){</span> <span class="k">return</span> <span class="n">fabs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">eps</span> <span class="o">?</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">?</span> <span class="mi">1</span> <span class="o">:</span> <span class="o">-</span><span class="mi">1</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="_1">基本元素<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">向量<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>我在这里假设大家都已经熟练掌握高中所学内容并能够运用.<br />
+点可以当做从原点到点的向量来存储.  </p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">struct</span> <span class="n">line</span><span class="p">;</span>
+<span class="k">struct</span> <span class="n">vec</span><span class="p">{</span>
+    <span class="kt">double</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">;</span> <span class="kr">inline</span> <span class="nf">vec</span><span class="p">(</span> <span class="n">line</span> <span class="n">t</span> <span class="p">);</span> <span class="c1">//后面定义线后再定义</span>
+    <span class="kr">inline</span> <span class="nf">vec</span><span class="p">(</span> <span class="kt">double</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="kt">double</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">)</span><span class="o">:</span><span class="n">x</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="n">y</span><span class="p">(</span><span class="n">b</span><span class="p">){}</span>
+    <span class="kr">inline</span> <span class="n">vec</span> <span class="k">operator</span> <span class="o">+</span> <span class="p">(</span> <span class="n">vec</span> <span class="n">t</span> <span class="p">){</span> <span class="k">return</span> <span class="n">vec</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">t</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="n">t</span><span class="p">.</span><span class="n">y</span><span class="p">);</span> <span class="p">}</span>
+    <span class="kr">inline</span> <span class="n">vec</span> <span class="k">operator</span> <span class="o">-</span> <span class="p">(</span> <span class="n">vec</span> <span class="n">t</span> <span class="p">){</span> <span class="k">return</span> <span class="n">vec</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">t</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">-</span> <span class="n">t</span><span class="p">.</span><span class="n">y</span><span class="p">);</span> <span class="p">}</span>
+    <span class="kr">inline</span> <span class="n">vec</span> <span class="k">operator</span> <span class="o">*</span> <span class="p">(</span> <span class="kt">double</span> <span class="n">t</span> <span class="p">){</span> <span class="k">return</span> <span class="n">vec</span><span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="n">t</span><span class="p">,</span> <span class="n">y</span> <span class="o">*</span> <span class="n">t</span><span class="p">);</span> <span class="p">}</span>
+    <span class="kr">inline</span> <span class="n">vec</span> <span class="k">operator</span> <span class="o">/</span> <span class="p">(</span> <span class="kt">double</span> <span class="n">t</span> <span class="p">){</span> <span class="k">return</span> <span class="n">vec</span><span class="p">(</span><span class="n">x</span> <span class="o">/</span> <span class="n">t</span><span class="p">,</span> <span class="n">y</span> <span class="o">/</span> <span class="n">t</span><span class="p">);</span> <span class="p">}</span>
+    <span class="kr">inline</span> <span class="kt">bool</span> <span class="k">operator</span> <span class="o">==</span> <span class="p">(</span> <span class="n">vec</span> <span class="n">t</span> <span class="p">){</span> <span class="k">return</span> <span class="o">!</span><span class="n">sgn</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">t</span><span class="p">.</span><span class="n">x</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">sgn</span><span class="p">(</span><span class="n">y</span> <span class="o">-</span> <span class="n">t</span><span class="p">.</span><span class="n">y</span><span class="p">);</span> <span class="p">}</span>
+    <span class="kr">inline</span> <span class="kt">double</span> <span class="n">length</span><span class="p">(){</span> <span class="k">return</span> <span class="n">sqrt</span><span class="p">(</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">*</span> <span class="n">y</span> <span class="p">);</span> <span class="p">}</span>
+<span class="p">};</span>
+<span class="kr">inline</span> <span class="kt">double</span> <span class="nf">dot</span><span class="p">(</span> <span class="n">vec</span> <span class="n">a</span><span class="p">,</span> <span class="n">vec</span> <span class="n">b</span> <span class="p">){</span> <span class="k">return</span> <span class="n">a</span><span class="p">.</span><span class="n">x</span> <span class="o">*</span> <span class="n">b</span><span class="p">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">a</span><span class="p">.</span><span class="n">y</span> <span class="o">*</span> <span class="n">b</span><span class="p">.</span><span class="n">y</span><span class="p">;</span> <span class="p">}</span> <span class="c1">//点乘</span>
+<span class="kr">inline</span> <span class="kt">double</span> <span class="nf">det</span><span class="p">(</span> <span class="n">vec</span> <span class="n">a</span><span class="p">,</span> <span class="n">vec</span> <span class="n">b</span> <span class="p">){</span> <span class="k">return</span> <span class="n">a</span><span class="p">.</span><span class="n">x</span> <span class="o">*</span> <span class="n">b</span><span class="p">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">a</span><span class="p">.</span><span class="n">y</span> <span class="o">*</span> <span class="n">b</span><span class="p">.</span><span class="n">x</span><span class="p">;</span> <span class="p">}</span> <span class="c1">//叉乘</span>
+<span class="kr">inline</span> <span class="kt">double</span> <span class="nf">cross</span><span class="p">(</span> <span class="n">vec</span> <span class="n">a</span><span class="p">,</span> <span class="n">vec</span> <span class="n">b</span><span class="p">,</span> <span class="n">vec</span> <span class="n">o</span> <span class="o">=</span> <span class="n">vec</span><span class="p">()</span> <span class="p">){</span> <span class="k">return</span> <span class="n">det</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">o</span><span class="p">,</span> <span class="n">b</span> <span class="o">-</span> <span class="n">o</span><span class="p">);</span> <span class="p">}</span>
+<span class="kr">inline</span> <span class="n">vec</span> <span class="nf">rotate</span><span class="p">(</span> <span class="n">vec</span> <span class="n">a</span><span class="p">,</span> <span class="kt">double</span> <span class="n">deg</span> <span class="p">){</span> <span class="k">return</span> <span class="n">vec</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="n">x</span> <span class="o">*</span> <span class="n">cos</span><span class="p">(</span><span class="n">deg</span><span class="p">)</span> <span class="o">-</span> <span class="n">a</span><span class="p">.</span><span class="n">y</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">deg</span><span class="p">),</span> <span class="n">a</span><span class="p">.</span><span class="n">x</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">deg</span><span class="p">)</span> <span class="o">+</span> <span class="n">a</span><span class="p">.</span><span class="n">y</span> <span class="o">*</span> <span class="n">cos</span><span class="p">(</span><span class="n">deg</span><span class="p">));</span> <span class="p">}</span> <span class="c1">//向量旋转</span>
+<span class="kr">inline</span> <span class="n">vec</span> <span class="nf">normal</span><span class="p">(</span> <span class="n">vec</span> <span class="n">a</span> <span class="p">){</span> <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">a</span><span class="p">.</span><span class="n">length</span><span class="p">();</span> <span class="p">}</span> <span class="c1">//单位法向量</span>
+</pre></div>
+</td></tr></table>
+
+<h3 id="_3">线<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>两点确定一条直线.<br />
+线段可以用两个端点表示.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">struct</span> <span class="n">line</span><span class="p">{</span>
+    <span class="n">vec</span> <span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">;</span>
+    <span class="kr">inline</span> <span class="nf">line</span><span class="p">(</span> <span class="n">vec</span> <span class="n">a</span> <span class="o">=</span> <span class="n">vec</span><span class="p">(),</span> <span class="n">vec</span> <span class="n">b</span> <span class="o">=</span> <span class="n">vec</span><span class="p">()</span> <span class="p">)</span><span class="o">:</span><span class="n">s</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="n">t</span><span class="p">(</span><span class="n">b</span><span class="p">){}</span>
+    <span class="kr">inline</span> <span class="kt">double</span> <span class="nf">length</span><span class="p">(){</span> <span class="k">return</span> <span class="p">(</span><span class="n">s</span> <span class="o">-</span> <span class="n">t</span><span class="p">).</span><span class="n">length</span><span class="p">();</span> <span class="p">}</span>
+<span class="p">};</span>
+<span class="kr">inline</span> <span class="n">vec</span><span class="o">::</span><span class="n">vec</span><span class="p">(</span> <span class="n">line</span> <span class="n">t</span> <span class="p">){</span> <span class="o">*</span><span class="k">this</span> <span class="o">=</span> <span class="n">t</span><span class="p">.</span><span class="n">t</span> <span class="o">-</span> <span class="n">t</span><span class="p">.</span><span class="n">s</span><span class="p">;</span> <span class="p">}</span>
+<span class="kr">inline</span> <span class="kt">bool</span> <span class="n">parallel</span><span class="p">(</span> <span class="n">line</span> <span class="n">a</span><span class="p">,</span> <span class="n">line</span> <span class="n">b</span> <span class="p">){</span> <span class="k">return</span> <span class="o">!</span><span class="n">sgn</span><span class="p">(</span><span class="n">det</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">));</span> <span class="p">}</span> <span class="c1">//判断平行</span>
+<span class="kr">inline</span> <span class="kt">bool</span> <span class="k">operator</span> <span class="o">==</span> <span class="p">(</span> <span class="n">line</span> <span class="n">a</span><span class="p">,</span> <span class="n">line</span> <span class="n">b</span> <span class="p">){</span> <span class="k">return</span> <span class="n">parallel</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">parallel</span><span class="p">(</span><span class="n">line</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="n">s</span><span class="p">,</span> <span class="n">b</span><span class="p">.</span><span class="n">t</span><span class="p">),</span> <span class="n">line</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">s</span><span class="p">,</span> <span class="n">a</span><span class="p">.</span><span class="n">t</span><span class="p">));</span> <span class="p">}</span> <span class="c1">//判断相等</span>
+</pre></div>
+</td></tr></table>
+
+<h3 id="_4">点与线<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">//点在线段上   &lt;= 0 可以在端点    &lt; 0 不能在端点</span>
+<span class="kr">inline</span> <span class="kt">bool</span> <span class="nf">p_on_seg</span><span class="p">(</span> <span class="n">vec</span> <span class="n">p</span><span class="p">,</span> <span class="n">line</span> <span class="n">seg</span> <span class="p">){</span>
+    <span class="n">vec</span> <span class="n">a</span><span class="p">(</span><span class="n">seg</span><span class="p">.</span><span class="n">s</span> <span class="o">-</span> <span class="n">p</span><span class="p">),</span> <span class="n">b</span><span class="p">(</span><span class="n">seg</span><span class="p">.</span><span class="n">t</span> <span class="o">-</span> <span class="n">p</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">!</span><span class="n">sgn</span><span class="p">(</span><span class="n">det</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">))</span> <span class="o">&amp;&amp;</span> <span class="n">sgn</span><span class="p">(</span><span class="n">dot</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">))</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//点到直线距离 </span>
+<span class="kr">inline</span> <span class="kt">double</span> <span class="nf">dist_to_line</span><span class="p">(</span> <span class="n">vec</span> <span class="n">p</span><span class="p">,</span> <span class="n">line</span> <span class="n">l</span> <span class="p">){</span>
+    <span class="k">return</span> <span class="n">fabs</span><span class="p">(</span><span class="n">cross</span><span class="p">(</span> <span class="n">l</span><span class="p">.</span><span class="n">s</span><span class="p">,</span> <span class="n">l</span><span class="p">.</span><span class="n">t</span><span class="p">,</span> <span class="n">p</span> <span class="p">))</span> <span class="o">/</span> <span class="n">l</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="c1">//点到线段距离 </span>
+<span class="kr">inline</span> <span class="kt">double</span> <span class="nf">dist_to_seg</span><span class="p">(</span> <span class="n">vec</span> <span class="n">p</span><span class="p">,</span> <span class="n">line</span> <span class="n">l</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span> <span class="n">l</span><span class="p">.</span><span class="n">s</span> <span class="o">==</span> <span class="n">l</span><span class="p">.</span><span class="n">t</span> <span class="p">)</span> <span class="k">return</span> <span class="p">(</span><span class="n">p</span> <span class="o">-</span> <span class="n">l</span><span class="p">.</span><span class="n">s</span><span class="p">).</span><span class="n">length</span><span class="p">();</span>
+    <span class="n">vec</span> <span class="n">vs</span> <span class="o">=</span> <span class="n">p</span> <span class="o">-</span> <span class="n">l</span><span class="p">.</span><span class="n">s</span><span class="p">,</span> <span class="n">vt</span> <span class="o">=</span> <span class="n">p</span> <span class="o">-</span> <span class="n">l</span><span class="p">.</span><span class="n">t</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span> <span class="n">sgn</span><span class="p">(</span><span class="n">dot</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">vs</span><span class="p">))</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="p">)</span> <span class="k">return</span> <span class="n">vs</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span> <span class="n">sgn</span><span class="p">(</span><span class="n">dot</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">vt</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="n">vt</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
+    <span class="k">else</span> <span class="k">return</span> <span class="n">dist_to_line</span><span class="p">(</span> <span class="n">p</span><span class="p">,</span> <span class="n">l</span> <span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+<p><img alt="施工中..." src="../undone.jpg" /></p>
                 
                   
                 

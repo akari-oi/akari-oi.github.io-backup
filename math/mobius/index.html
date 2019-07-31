@@ -644,6 +644,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      DP优化
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        DP优化
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dp/optimizations/knuth-yao-quadrangle-inequality/" title="四边形不等式" class="md-nav__link">
+      四边形不等式
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1700,13 +1736,21 @@ d=1 * 1 \\
 </ul>
 <p>可以利用欧拉函数的定义+莫比乌斯反演来证。</p>
 <p>我们先在等式两边同时卷1</p>
-<p>$$
-\varphi * 1 = 1 * \mu * ID \
-\varphi * 1 = \varepsilon * ID \
-\varphi * 1 = ID \
+<div>
+<div class="MathJax_Preview">
+\varphi * 1 = 1 * \mu * ID \\
+\varphi * 1 = \varepsilon * ID \\
+\varphi * 1 = ID \\
 (\varphi * 1)(n) = \sum_{d|n}\varphi(d) = \sum_{d|n}\varphi(n / d)
-$$
-可以认为上面柿子中<span><span class="MathJax_Preview">\varphi(n / d)</span><script type="math/tex">\varphi(n / d)</script></span>表示<span><span class="MathJax_Preview">\sum_i=1^n[gcd(n,i)=d]</span><script type="math/tex">\sum_i=1^n[gcd(n,i)=d]</script></span>,很明显,每个数与<span><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span>的公约数不变,对答案有且仅有<span><span class="MathJax_Preview">1</span><script type="math/tex">1</script></span>的贡献,最终的值即为<span><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span></p>
+</div>
+<script type="math/tex; mode=display">
+\varphi * 1 = 1 * \mu * ID \\
+\varphi * 1 = \varepsilon * ID \\
+\varphi * 1 = ID \\
+(\varphi * 1)(n) = \sum_{d|n}\varphi(d) = \sum_{d|n}\varphi(n / d)
+</script>
+</div>
+<p>可以认为上面柿子中<span><span class="MathJax_Preview">\varphi(n / d)</span><script type="math/tex">\varphi(n / d)</script></span>表示<span><span class="MathJax_Preview">\sum_i=1^n[gcd(n,i)=d]</span><script type="math/tex">\sum_i=1^n[gcd(n,i)=d]</script></span>,很明显,每个数与<span><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span>的公约数不变,对答案有且仅有<span><span class="MathJax_Preview">1</span><script type="math/tex">1</script></span>的贡献,最终的值即为<span><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span></p>
 <h2 id="_4">莫比乌斯反演<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>总算写到这里了(掩面痛哭</p>
 <p>对于两个数论函数<span><span class="MathJax_Preview">f</span><script type="math/tex">f</script></span>,<span><span class="MathJax_Preview">g</span><script type="math/tex">g</script></span></p>

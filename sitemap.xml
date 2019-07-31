@@ -2,207 +2,212 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://akari-oi.github.io/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/control/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/search/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/string/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/string/pam/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/data-structure/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/data-structure/binary-indexed-tree/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/data-structure/segment-tree/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/data-structure/sparse-table/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/data-structure/balanced-binary-tree/fhq-treap/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/data-structure/leftist-tree/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/dp/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://akari-oi.github.io/dp/optimizations/knuth-yao-quadrangle-inequality/</loc>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/math/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/math/div/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/math/div/gcd/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/math/cm/cantor/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/math/la/gauss/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/math/la/matrix-inversion/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/math/la/matrix-tree/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/math/mobius/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/math/pythagorean-triple/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/graph/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/geometry/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/geometry/vector/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/geometry/distance/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/geometry/triangulation/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/geometry/2d-convex-hull/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/geometry/3d-convex-hull/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/geometry/rotating-calipers/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/geometry/half-plane-intersection/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/geometry/scanning/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/geometry/random-incremental/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/geometry/circle/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/geometry/circle/inversion/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/geometry/circle/discretization/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/geometry/misc/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/other/offline/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/other/offline/cdq-divide/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/other/offline/parallel-binsearch/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/other/offline/mo-algo/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://akari-oi.github.io/other/largest-matrix/</loc>
-     <lastmod>2019-07-29</lastmod>
+     <lastmod>2019-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

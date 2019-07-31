@@ -13,7 +13,7 @@
         <meta name="description" content="akari's blog">
       
       
-        <link rel="canonical" href="https://akari-oi.github.io/data-structure/binary-indexed-tree/">
+        <link rel="canonical" href="https://akari-oi.github.io/dp/optimizations/knuth-yao-quadrangle-inequality/">
       
       
         <meta name="author" content="akari">
@@ -37,18 +37,18 @@
       
         <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
       
-      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="shortcut icon" href="../../../favicon.ico">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
     
     
       
-        <title>树状数组 - Hello,I am akari</title>
+        <title>四边形不等式 - Hello,I am akari</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.0284f74d.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.01803549.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.01803549.css">
       
       
         
@@ -57,7 +57,7 @@
       
     
     
-      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
@@ -66,12 +66,12 @@
         <style>body,input{font-family:"Fira Sans","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Fira Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
     
-      <link rel="manifest" href="../../manifest.webmanifest">
+      <link rel="manifest" href="../../../manifest.webmanifest">
     
     
-      <link rel="stylesheet" href="../../_static/css/extra.css?v=12">
+      <link rel="stylesheet" href="../../../_static/css/extra.css?v=12">
     
     
       
@@ -95,6 +95,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#_1" tabindex="1" class="md-skip">
+        跳转至
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -117,7 +121,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                树状数组
+                四边形不等式
               
             </span>
           
@@ -196,7 +200,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../.." title="akari-oi" class="md-tabs__link">
+        <a href="../../.." title="akari-oi" class="md-tabs__link">
           akari-oi
         </a>
       
@@ -209,7 +213,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../search/" title="搜索" class="md-tabs__link">
+        <a href="../../../search/" title="搜索" class="md-tabs__link">
           搜索
         </a>
       
@@ -222,7 +226,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../string/" title="字符串" class="md-tabs__link">
+        <a href="../../../string/" title="字符串" class="md-tabs__link">
           字符串
         </a>
       
@@ -235,7 +239,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../" title="数据结构" class="md-tabs__link md-tabs__link--active">
+        <a href="../../../data-structure/" title="数据结构" class="md-tabs__link">
           数据结构
         </a>
       
@@ -248,7 +252,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../dp/" title="动态规划" class="md-tabs__link">
+        <a href="../../" title="动态规划" class="md-tabs__link md-tabs__link--active">
           动态规划
         </a>
       
@@ -261,7 +265,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../math/" title="数学" class="md-tabs__link">
+        <a href="../../../math/" title="数学" class="md-tabs__link">
           数学
         </a>
       
@@ -274,7 +278,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../graph/" title="图论" class="md-tabs__link">
+        <a href="../../../graph/" title="图论" class="md-tabs__link">
           图论
         </a>
       
@@ -287,7 +291,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../geometry/" title="计算几何" class="md-tabs__link">
+        <a href="../../../geometry/" title="计算几何" class="md-tabs__link">
           计算几何
         </a>
       
@@ -304,7 +308,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../other/offline/" title="其他算法" class="md-tabs__link">
+        <a href="../../../other/offline/" title="其他算法" class="md-tabs__link">
           其他算法
         </a>
       
@@ -382,7 +386,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="简介" class="md-nav__link">
+    <a href="../../.." title="简介" class="md-nav__link">
       简介
     </a>
   </li>
@@ -394,7 +398,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../control/" title="仪表盘" class="md-nav__link">
+    <a href="../../../control/" title="仪表盘" class="md-nav__link">
       仪表盘
     </a>
   </li>
@@ -430,7 +434,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../search/" title="简介" class="md-nav__link">
+    <a href="../../../search/" title="简介" class="md-nav__link">
       简介
     </a>
   </li>
@@ -466,7 +470,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../string/" title="简介" class="md-nav__link">
+    <a href="../../../string/" title="简介" class="md-nav__link">
       简介
     </a>
   </li>
@@ -478,7 +482,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../string/pam/" title="回文自动机" class="md-nav__link">
+    <a href="../../../string/pam/" title="回文自动机" class="md-nav__link">
       回文自动机
     </a>
   </li>
@@ -493,12 +497,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       数据结构
@@ -516,7 +518,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="简介" class="md-nav__link">
+    <a href="../../../data-structure/" title="简介" class="md-nav__link">
       简介
     </a>
   </li>
@@ -526,18 +528,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="树状数组" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../../data-structure/binary-indexed-tree/" title="树状数组" class="md-nav__link">
       树状数组
     </a>
-    
   </li>
 
         
@@ -547,7 +542,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../segment-tree/" title="线段树" class="md-nav__link">
+    <a href="../../../data-structure/segment-tree/" title="线段树" class="md-nav__link">
       线段树
     </a>
   </li>
@@ -559,7 +554,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../sparse-table/" title="ST表" class="md-nav__link">
+    <a href="../../../data-structure/sparse-table/" title="ST表" class="md-nav__link">
       ST表
     </a>
   </li>
@@ -590,7 +585,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../balanced-binary-tree/fhq-treap/" title="FHQ Treap" class="md-nav__link">
+    <a href="../../../data-structure/balanced-binary-tree/fhq-treap/" title="FHQ Treap" class="md-nav__link">
       FHQ Treap
     </a>
   </li>
@@ -607,7 +602,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../leftist-tree/" title="左偏树" class="md-nav__link">
+    <a href="../../../data-structure/leftist-tree/" title="左偏树" class="md-nav__link">
       左偏树
     </a>
   </li>
@@ -622,10 +617,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
     
     <label class="md-nav__link" for="nav-5">
       动态规划
@@ -643,7 +640,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../dp/" title="简介" class="md-nav__link">
+    <a href="../../" title="简介" class="md-nav__link">
       简介
     </a>
   </li>
@@ -653,10 +650,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2" checked>
     
     <label class="md-nav__link" for="nav-5-2">
       DP优化
@@ -672,11 +671,65 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../dp/optimizations/knuth-yao-quadrangle-inequality/" title="四边形不等式" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        四边形不等式
+      </label>
+    
+    <a href="./" title="四边形不等式" class="md-nav__link md-nav__link--active">
       四边形不等式
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="四边形不等式" class="md-nav__link">
+    四边形不等式
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dp" title="一维线性DP的四边形不等式优化" class="md-nav__link">
+    一维线性DP的四边形不等式优化
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dp_1" title="二维区间DP的四边形不等式优化" class="md-nav__link">
+    二维区间DP的四边形不等式优化
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="评论" class="md-nav__link md-nav__link--active">
+            评论
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -715,7 +768,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../math/" title="简介" class="md-nav__link">
+    <a href="../../../math/" title="简介" class="md-nav__link">
       简介
     </a>
   </li>
@@ -746,7 +799,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../math/div/" title="基础" class="md-nav__link">
+    <a href="../../../math/div/" title="基础" class="md-nav__link">
       基础
     </a>
   </li>
@@ -758,7 +811,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../math/div/gcd/" title="gcd与exgcd" class="md-nav__link">
+    <a href="../../../math/div/gcd/" title="gcd与exgcd" class="md-nav__link">
       gcd与exgcd
     </a>
   </li>
@@ -794,7 +847,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../math/cm/cantor/" title="康托展开" class="md-nav__link">
+    <a href="../../../math/cm/cantor/" title="康托展开" class="md-nav__link">
       康托展开
     </a>
   </li>
@@ -830,7 +883,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../math/la/gauss/" title="高斯消元" class="md-nav__link">
+    <a href="../../../math/la/gauss/" title="高斯消元" class="md-nav__link">
       高斯消元
     </a>
   </li>
@@ -842,7 +895,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../math/la/matrix-inversion/" title="矩阵求逆" class="md-nav__link">
+    <a href="../../../math/la/matrix-inversion/" title="矩阵求逆" class="md-nav__link">
       矩阵求逆
     </a>
   </li>
@@ -854,7 +907,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../math/la/matrix-tree/" title="矩阵树定理" class="md-nav__link">
+    <a href="../../../math/la/matrix-tree/" title="矩阵树定理" class="md-nav__link">
       矩阵树定理
     </a>
   </li>
@@ -871,7 +924,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../math/mobius/" title="莫比乌斯反演" class="md-nav__link">
+    <a href="../../../math/mobius/" title="莫比乌斯反演" class="md-nav__link">
       莫比乌斯反演
     </a>
   </li>
@@ -883,7 +936,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../math/pythagorean-triple/" title="勾股数组" class="md-nav__link">
+    <a href="../../../math/pythagorean-triple/" title="勾股数组" class="md-nav__link">
       勾股数组
     </a>
   </li>
@@ -919,7 +972,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../graph/" title="简介" class="md-nav__link">
+    <a href="../../../graph/" title="简介" class="md-nav__link">
       简介
     </a>
   </li>
@@ -955,7 +1008,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../geometry/" title="简介" class="md-nav__link">
+    <a href="../../../geometry/" title="简介" class="md-nav__link">
       简介
     </a>
   </li>
@@ -967,7 +1020,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../geometry/vector/" title="向量" class="md-nav__link">
+    <a href="../../../geometry/vector/" title="向量" class="md-nav__link">
       向量
     </a>
   </li>
@@ -979,7 +1032,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../geometry/distance/" title="距离" class="md-nav__link">
+    <a href="../../../geometry/distance/" title="距离" class="md-nav__link">
       距离
     </a>
   </li>
@@ -991,7 +1044,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../geometry/triangulation/" title="三角剖分" class="md-nav__link">
+    <a href="../../../geometry/triangulation/" title="三角剖分" class="md-nav__link">
       三角剖分
     </a>
   </li>
@@ -1003,7 +1056,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../geometry/2d-convex-hull/" title="二维凸包" class="md-nav__link">
+    <a href="../../../geometry/2d-convex-hull/" title="二维凸包" class="md-nav__link">
       二维凸包
     </a>
   </li>
@@ -1015,7 +1068,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../geometry/3d-convex-hull/" title="三维凸包" class="md-nav__link">
+    <a href="../../../geometry/3d-convex-hull/" title="三维凸包" class="md-nav__link">
       三维凸包
     </a>
   </li>
@@ -1027,7 +1080,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../geometry/rotating-calipers/" title="旋转卡壳" class="md-nav__link">
+    <a href="../../../geometry/rotating-calipers/" title="旋转卡壳" class="md-nav__link">
       旋转卡壳
     </a>
   </li>
@@ -1039,7 +1092,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../geometry/half-plane-intersection/" title="半平面交" class="md-nav__link">
+    <a href="../../../geometry/half-plane-intersection/" title="半平面交" class="md-nav__link">
       半平面交
     </a>
   </li>
@@ -1051,7 +1104,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../geometry/scanning/" title="扫描线" class="md-nav__link">
+    <a href="../../../geometry/scanning/" title="扫描线" class="md-nav__link">
       扫描线
     </a>
   </li>
@@ -1063,7 +1116,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../geometry/random-incremental/" title="随机增量" class="md-nav__link">
+    <a href="../../../geometry/random-incremental/" title="随机增量" class="md-nav__link">
       随机增量
     </a>
   </li>
@@ -1094,7 +1147,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../geometry/circle/" title="简介" class="md-nav__link">
+    <a href="../../../geometry/circle/" title="简介" class="md-nav__link">
       简介
     </a>
   </li>
@@ -1106,7 +1159,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../geometry/circle/inversion/" title="圆的反演" class="md-nav__link">
+    <a href="../../../geometry/circle/inversion/" title="圆的反演" class="md-nav__link">
       圆的反演
     </a>
   </li>
@@ -1118,7 +1171,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../geometry/circle/discretization/" title="圆的离散化" class="md-nav__link">
+    <a href="../../../geometry/circle/discretization/" title="圆的离散化" class="md-nav__link">
       圆的离散化
     </a>
   </li>
@@ -1135,7 +1188,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../geometry/misc/" title="杂项" class="md-nav__link">
+    <a href="../../../geometry/misc/" title="杂项" class="md-nav__link">
       杂项
     </a>
   </li>
@@ -1190,7 +1243,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../other/offline/" title="简介" class="md-nav__link">
+    <a href="../../../other/offline/" title="简介" class="md-nav__link">
       简介
     </a>
   </li>
@@ -1202,7 +1255,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../other/offline/cdq-divide/" title="CDQ分治" class="md-nav__link">
+    <a href="../../../other/offline/cdq-divide/" title="CDQ分治" class="md-nav__link">
       CDQ分治
     </a>
   </li>
@@ -1214,7 +1267,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../other/offline/parallel-binsearch/" title="整体二分" class="md-nav__link">
+    <a href="../../../other/offline/parallel-binsearch/" title="整体二分" class="md-nav__link">
       整体二分
     </a>
   </li>
@@ -1226,7 +1279,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../other/offline/mo-algo/" title="莫队算法" class="md-nav__link">
+    <a href="../../../other/offline/mo-algo/" title="莫队算法" class="md-nav__link">
       莫队算法
     </a>
   </li>
@@ -1243,7 +1296,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../other/largest-matrix/" title="悬线法" class="md-nav__link">
+    <a href="../../../other/largest-matrix/" title="悬线法" class="md-nav__link">
       悬线法
     </a>
   </li>
@@ -1261,17 +1314,131 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="四边形不等式" class="md-nav__link">
+    四边形不等式
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dp" title="一维线性DP的四边形不等式优化" class="md-nav__link">
+    一维线性DP的四边形不等式优化
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dp_1" title="二维区间DP的四边形不等式优化" class="md-nav__link">
+    二维区间DP的四边形不等式优化
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="评论" class="md-nav__link md-nav__link--active">
+            评论
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/akari-oi/akari-oi/blob/master/docs/data-structure/binary-indexed-tree.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/akari-oi/akari-oi/blob/master/docs/dp/optimizations/knuth-yao-quadrangle-inequality.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>树状数组</h1>
+                  <h1>四边形不等式</h1>
                 
-                <p><img alt="施工中..." src="../../undone.jpg" /></p>
+                <h2 id="_1">四边形不等式<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><span><span class="MathJax_Preview">w(i,j)</span><script type="math/tex">w(i,j)</script></span>是定义在整数域的二元函数。<br />
+若对于在定义域范围内的<span><span class="MathJax_Preview">a,b,c,d,a \le b \le c \le d</span><script type="math/tex">a,b,c,d,a \le b \le c \le d</script></span>,都有<span><span class="MathJax_Preview">w(a,d) + w(b,c) \ge w(a,c) + w(b,d)</span><script type="math/tex">w(a,d) + w(b,c) \ge w(a,c) + w(b,d)</script></span>,则称函数<span><span class="MathJax_Preview">w</span><script type="math/tex">w</script></span>满足四边形不等式。<br />
+四边形不等式还有另外一种定义方式:若对于在定义域范围内的<span><span class="MathJax_Preview">a,b,a &lt; b</span><script type="math/tex">a,b,a < b</script></span>,都有<span><span class="MathJax_Preview">w(a,b+1) + w(a+1,b) \ge w(a,b) + w(a+1,b+1)</span><script type="math/tex">w(a,b+1) + w(a+1,b) \ge w(a,b) + w(a+1,b+1)</script></span>,则称函数<span><span class="MathJax_Preview">w</span><script type="math/tex">w</script></span>满足四边形不等式。<br />
+这两种定义方式完全等价。<br />
+证明:</p>
+<p><img alt="" src="../../../undone.jpg" /></p>
+<h2 id="dp">一维线性DP的四边形不等式优化<a class="headerlink" href="#dp" title="Permanent link">&para;</a></h2>
+<p>对于形如</p>
+<div>
+<div class="MathJax_Preview">
+f_i = min_{0 \le j &lt; i}\{f_j + w(j,i)\}
+</div>
+<script type="math/tex; mode=display">
+f_i = min_{0 \le j < i}\{f_j + w(j,i)\}
+</script>
+</div>
+<p>的DP转移方程,未经优化转移复杂度为<span><span class="MathJax_Preview">O(N^2)</span><script type="math/tex">O(N^2)</script></span><br />
+若<span><span class="MathJax_Preview">w</span><script type="math/tex">w</script></span>满足四边形不等式,我们可以优化到<span><span class="MathJax_Preview">O(N\lg N)</span><script type="math/tex">O(N\lg N)</script></span></p>
+<hr />
+<p>事实上,转移的决策具有单调性。<br />
+设<span><span class="MathJax_Preview">p_i</span><script type="math/tex">p_i</script></span>为<span><span class="MathJax_Preview">f_i</span><script type="math/tex">f_i</script></span>的最优决策之一(可以看做在最优的前提下<span><span class="MathJax_Preview">p_i</span><script type="math/tex">p_i</script></span>尽量小),即<span><span class="MathJax_Preview">f_{p_i}+w(p_i,i)=min_{0 \le j &lt; i}\{f_j + w(j,i)\}</span><script type="math/tex">f_{p_i}+w(p_i,i)=min_{0 \le j < i}\{f_j + w(j,i)\}</script></span>。<br />
+那么对于<span><span class="MathJax_Preview">i' \ge i</span><script type="math/tex">i' \ge i</script></span>,总有<span><span class="MathJax_Preview">p_{i'} \ge p_i</span><script type="math/tex">p_{i'} \ge p_i</script></span>。  </p>
+<p>证明:  </p>
+<p><img alt="" src="../../../undone.jpg" /></p>
+<hr />
+<p>然后我们就可以用分治将算法优化至<span><span class="MathJax_Preview">O(N\lg N)</span><script type="math/tex">O(N\lg N)</script></span>级别。<br />
+似乎还有一种二分的方法,实现较为麻烦,感兴趣的同学可以自行查阅资料。  </p>
+<h2 id="dp_1">二维区间DP的四边形不等式优化<a class="headerlink" href="#dp_1" title="Permanent link">&para;</a></h2>
+<p>对于形如</p>
+<div>
+<div class="MathJax_Preview">
+f_{i,j} = min_{i \le k &lt; j}\{f_{i,k} + f_{k+1,j} + w(i,j)\}
+</div>
+<script type="math/tex; mode=display">
+f_{i,j} = min_{i \le k < j}\{f_{i,k} + f_{k+1,j} + w(i,j)\}
+</script>
+</div>
+<p>的DP转移方程,未经优化转移复杂度为<span><span class="MathJax_Preview">O(N^3)</span><script type="math/tex">O(N^3)</script></span><br />
+若<span><span class="MathJax_Preview">f</span><script type="math/tex">f</script></span>(注意了是<span><span class="MathJax_Preview">f</span><script type="math/tex">f</script></span>)满足四边形不等式,我们可以优化到<span><span class="MathJax_Preview">O(N^2)</span><script type="math/tex">O(N^2)</script></span></p>
+<hr />
+<p>转移的决策也具有单调性。
+设<span><span class="MathJax_Preview">p_{i,j}</span><script type="math/tex">p_{i,j}</script></span>为<span><span class="MathJax_Preview">f_{i,j}</span><script type="math/tex">f_{i,j}</script></span>的最优决策之一,即<span><span class="MathJax_Preview">f_{i,p_{i,j}} + f_{p_{i,j}+1,j} + w(i,j) = min_{i \le k &lt; j}\{f_{i,k} + f_{k+1,j} + w(i,j)\}</span><script type="math/tex">f_{i,p_{i,j}} + f_{p_{i,j}+1,j} + w(i,j) = min_{i \le k < j}\{f_{i,k} + f_{k+1,j} + w(i,j)\}</script></span><br />
+那么有<span><span class="MathJax_Preview">p_{i,j-1} \le p_{i,j} \le p_{i+1,j}</span><script type="math/tex">p_{i,j-1} \le p_{i,j} \le p_{i+1,j}</script></span></p>
+<p>证明:  </p>
+<p><img alt="" src="../../../undone.jpg" /></p>
+<hr />
+<p>然后我们就可以较快地完成转移。</p>
+<p>核心代码如下  </p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">for</span> <span class="p">(</span> <span class="kt">int</span> <span class="n">l</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">l</span> <span class="o">&lt;=</span> <span class="n">N</span><span class="p">;</span> <span class="o">++</span><span class="n">l</span> <span class="p">)</span>
+    <span class="k">for</span> <span class="p">(</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="n">l</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">N</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">,</span> <span class="o">++</span><span class="n">j</span> <span class="p">){</span>
+    <span class="n">f</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">INF</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span> <span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">],</span> <span class="n">t</span><span class="p">;</span> <span class="n">k</span> <span class="o">&lt;=</span> <span class="n">p</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">];</span> <span class="o">++</span><span class="n">k</span> <span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span> <span class="n">f</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="p">(</span> <span class="n">t</span> <span class="o">=</span> <span class="n">f</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">+</span> <span class="n">f</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">w</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
+            <span class="n">f</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">t</span><span class="p">,</span> <span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">k</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+<p><img alt="" src="../../../undone.jpg" /></p>
                 
                   
                 
@@ -1284,9 +1451,9 @@
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://akari-oi.github.io/data-structure/binary-indexed-tree/";
+      this.page.url = "https://akari-oi.github.io/dp/optimizations/knuth-yao-quadrangle-inequality/";
       this.page.identifier =
-        "/data-structure/binary-indexed-tree/";
+        "/dp/optimizations/knuth-yao-quadrangle-inequality/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -1308,7 +1475,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../" title="简介" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../" title="简介" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1323,13 +1490,13 @@
           </a>
         
         
-          <a href="../segment-tree/" title="线段树" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../../math/" title="简介" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   下一页
                 </span>
-                线段树
+                简介
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -1361,12 +1528,12 @@
       
     </div>
     
-      <script src="../../assets/javascripts/application.245445c6.js"></script>
+      <script src="../../../assets/javascripts/application.245445c6.js"></script>
       
         
         
           
-          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          <script src="../../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
           
             
               
@@ -1376,9 +1543,9 @@
           
         
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
       
-        <script src="../../_static/js/extra.js?v=12"></script>
+        <script src="../../../_static/js/extra.js?v=12"></script>
       
         <script src="https://cdnjs.loli.net/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
